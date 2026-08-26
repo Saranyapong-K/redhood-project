@@ -5,14 +5,17 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x3d4q"]
 
-[node name="Node2D" type="Node2D" unique_id=1852876186]
+[node name="Character" type="Node2D" unique_id=1852876186]
+scale = Vector2(1, 1.1491657)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2012963130]
 script = ExtResource("1_0xm2m")
+jump_velocity = -600.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1382119350]
-scale = Vector2(-6.674758, 6.84757)
+scale = Vector2(-7.6853733, 6.3036017)
 shape = SubResource("CircleShape2D_x3d4q")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1712442838]
+scale = Vector2(1.0332046, 0.86236995)
 texture = ExtResource("2_h2yge")

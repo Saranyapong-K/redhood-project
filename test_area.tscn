@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dd0ys7cnoir0l"]
+
+[ext_resource type="PackedScene" uid="uid://d11n84wcumsq2" path="res://main.tscn" id="1_64fjj"]
+[ext_resource type="Texture2D" uid="uid://bqh3clv02uk5u" path="res://icon.svg" id="2_rfpkf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfpkf"]
+
+[node name="Test_Area" type="Node2D" unique_id=235211177]
+position = Vector2(115, 41)
+
+[node name="Character" parent="." unique_id=1852876186 instance=ExtResource("1_64fjj")]
+position = Vector2(455.99997, 285.00003)
+
+[node name="Camera2D" type="Camera2D" parent="Character" unique_id=246471285]
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=2044011796]
+position = Vector2(-90, 29)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1944861170]
+position = Vector2(581, 578)
+scale = Vector2(71.14125, -1.3782921)
+shape = SubResource("RectangleShape2D_rfpkf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor" unique_id=1540548804]
+position = Vector2(543, 583)
+scale = Vector2(11.986359, 0.3230364)
+texture = ExtResource("2_rfpkf")
