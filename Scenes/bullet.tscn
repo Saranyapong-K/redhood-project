@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://coesbrcilae1g"]
+
+[ext_resource type="Texture2D" uid="uid://1btxe81umd87" path="res://assets/Bullet 24x24 Free Part 3B.png" id="1_xjght"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oduel"]
+atlas = ExtResource("1_xjght")
+region = Rect2(456, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycag2"]
+atlas = ExtResource("1_xjght")
+region = Rect2(432, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6afsh"]
+atlas = ExtResource("1_xjght")
+region = Rect2(408, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odot3"]
+atlas = ExtResource("1_xjght")
+region = Rect2(384, 96, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3d4q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oduel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycag2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6afsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odot3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6afsh")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Bullet" type="Node2D" unique_id=946041460]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1021648021]
+sprite_frames = SubResource("SpriteFrames_x3d4q")
+frame_progress = 0.6134444
